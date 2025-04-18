@@ -1,20 +1,613 @@
 <html>
     <head>
-        <title>My Web Page</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>MyShine</title>
+        <meta name="Marwan" content="MyShineWebsite">
+        <link rel="stylesheet" type="text/css" href="Main.CSS">
     </head>
 
 
-    
-    <body>
-        <h1>Welcome to My Web Page</h1>
-        <p>This is a simple web page.</p>
-        <script src="script.js"></script>
+
+    <body> 
+        
+        <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+
+
+            <!-- Header Section -->
+            <div class="top-card">
+                <h1><u><b>My Shine</b></u></h1>
+                <nav>
+                <a href="Main.HTML">Home</a>
+                <a href="About.HTML">About</a>
+                <a href="Contact.HTML">Contact Us</a>
+                <a href="LoginPage.HTML">Sign Out</a>
+                </nav>
+            </div>
+            
+
+            <h1>Welcome to My Web Page</h1>
+            <p>This is a simple web page.</p>
+
+
+
+            
+            <p>Things you can do:</p>
+            <ul>
+                <li>Turn selected lights on/off</li>
+                <li>Add lights to your dashboard</li>
+                <li>Remove lights from your dashboard</li>
+            </ul>
+                   
+
+                    <!-- Horizontal Scrolling Container -->
+            <div class="light-container">
+                <div class="light-record">
+                    <h3>Living Room Main Light</h3>
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="https://static.vecteezy.com/system/resources/thumbnails/050/595/402/small_2x/crystal-chandelier-isolate-on-transparency-background-png.png" 
+                                    alt="Living Room Main Light" width="240" height="240">
+                            </td>
+                            <td>
+                                <label class="switch">
+                                    <input type="checkbox" name="mainLight">
+                                    <span class="slider"></span>
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="light-record">
+                    <h3>Living Room Lamp</h3>
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="https://static.vecteezy.com/system/resources/thumbnails/048/051/121/small_2x/a-wooden-floor-lamp-with-a-lampshade-transparent-background-png.png"
+                                    alt="Living Room Lamp" width="600" height="400">
+                            </td>
+                            <td>
+                                <label class="switch">
+                                    <input type="checkbox" name="LivingRoomLamp">
+                                    <span class="slider"></span>
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="light-record">
+                    <h3>Kitchen Main Light</h3>
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="https://static.vecteezy.com/system/resources/thumbnails/044/013/249/small/pendant-ceiling-lamp-on-transparent-background-png.png" 
+                                    alt="Kitchen Main Light">
+                            </td>
+                            <td>
+                                <label class="switch">
+                                    <input type="checkbox" name="KitchenLight">
+                                    <span class="slider"></span>
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="light-record">
+                    <h3>Garage Main Light</h3>
+                    <table>
+                        <tr>
+                            <td>
+                                <img src= "https://pngfre.com/wp-content/uploads/Fan-2.png"
+                                    alt="Garage Light">
+                            </td>
+                            <td>
+                                <label class="switch">
+                                    <input type="checkbox" name="GarageLight">
+                                    <span class="slider"></span>
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="light-nav">
+                <button class="nav-btn" id="prevBtn">Previous</button>
+                <button class="nav-btn" id="nextBtn">Next</button>
+            </div>
+
+            <script>
+                const container = document.querySelector('.light-container');
+                const prevButton = document.getElementById('prevBtn');
+                const nextButton = document.getElementById('nextBtn');
+            
+                const scrollAmount = container.clientWidth; // Scroll by the width of the container
+            
+                prevButton.addEventListener('click', () => {
+                    container.scrollBy({
+                        left: -scrollAmount, // Scroll to the left by the width of the container
+                        behavior: 'smooth'    // Smooth scroll effect
+                    });
+                });
+            
+                nextButton.addEventListener('click', () => {
+                    container.scrollBy({
+                        left: scrollAmount, // Scroll to the right by the width of the container
+                        behavior: 'smooth'   // Smooth scroll effect
+                    });
+                });
+            </script>
+
+
+
+          
+            <p>
+                
+
+WikipediaThe Free Encyclopedia
+Search Wikipedia
+Search
+Donate
+Create account
+Log in
+
+Contents hide
+(Top)
+Games
+Plot
+Development
+Other media
+
+Light novels
+Comics and manga
+Animation
+Anime
+Animated series
+Film
+Plays
+Soundtracks
+In other games
+Reception
+Notes
+References
+External links
+Devil May Cry
+
+Article
+Talk
+Read
+Edit
+View history
+
+Tools
+Appearance hide
+Text
+
+Small
+
+Standard
+
+Large
+Width
+
+Standard
+
+Wide
+Color (beta)
+
+Automatic
+
+Light
+
+Dark
+From Wikipedia, the free encyclopedia
+This article is about the video game franchise. For other uses, see Devil May Cry (disambiguation).
+Devil May Cry
+
+Genre(s)	
+Action-adventure
+Hack and slash
+Developer(s)	
+Capcom (2001–present)
+Ninja Theory (2013)
+Publisher(s)	Capcom
+Creator(s)	Hideki Kamiya
+Platform(s)	
+Android
+iOS
+Windows
+Mobile
+Nintendo Switch
+PlayStation 2
+PlayStation 3
+PlayStation 4
+PlayStation 5
+Shield Android TV
+Xbox 360
+Xbox One
+Xbox Series X/S
+First release	Devil May Cry
+August 23, 2001
+Latest release	Devil May Cry: Peak of Combat
+January 10, 2024
+Devil May Cry[a] is a science fantasy action-adventure game franchise created by Hideki Kamiya. It is primarily developed and published by Capcom. The series centers on the demon hunter Dante and his efforts to thwart various demon invasions of Earth. Its gameplay consists of combat scenarios in which the player must attempt to extend long chains of attacks, avoiding damage and exhibiting stylized combat by varying their attacks; this combat, along with time and the number of items collected and used, are considered in grading the player's performance.
+
+The series alludes to Italian poet Dante's Divine Comedy. Hideki Kamiya created Devil May Cry after a failed attempt to develop a Resident Evil game with the first game originally being conceived as Resident Evil 4. Kamiya wanted to create a game with more action features, which Capcom felt the series did not need. The games were directed by Hideaki Itsuno and writer Bingo Morihashi. Capcom announced a new game, DmC: Devil May Cry (developed by Ninja Theory and supervised by Capcom), during the 2010 Tokyo Game Show. A high-definition remastering of the three PlayStation 2 titles was compiled in the Devil May Cry HD Collection and released for PlayStation 3 and Xbox 360 in 2012, and in 2018 for the PlayStation 4, Windows, and Xbox One. The remasters were released as standalone titles for Nintendo Switch between 2019 and 2020. The latest game is Devil May Cry 5, released on March 8, 2019.
+
+The series has been successful; the main entries have sold 32 million copies worldwide and received Capcom's Platinum Title award.[1] The success of the video-game series has led to comic books, novelizations, two animated series, guides, collectibles, publications, and a variety of action figures.
+
+Games
+Release timeline
+2001	Devil May Cry
+2002
+2003	Devil May Cry 2
+Devil May Cry: Deadshot
+2004
+2005	Devil May Cry 3: Dante's Awakening
+2006	Devil May Cry 3: Dante's Awakening – Special Edition
+2007	Devil May Cry (mobile)
+2008	Devil May Cry (mobile)
+Devil May Cry 4
+2009
+2010
+2011
+2012	Devil May Cry HD Collection
+2013	DmC: Devil May Cry
+2014
+2015	Devil May Cry 4: Special Edition
+DmC: Devil May Cry Definitive Edition
+2016
+2017
+2018	Devil May Cry HD Collection
+(PS4, Xbox One, PC)
+2019	Devil May Cry 5
+2020	Devil May Cry 5: Special Edition
+2021
+2022
+2023
+2024	Devil May Cry: Peak of Combat
+Devil May Cry: Players assume the role of Dante, a skilled demon hunter. The gameplay focuses on fast-paced, highly stylized combat; a high style ranking requires long attack and evasion strings while avoiding damage. Although the game also features puzzle-solving and exploration elements retained from its survival-horror origins, they are downplayed in favor of action. In later games, the system was modified; players had to vary their attacks to maintain their style rank.[2] The Devil Trigger enables a player's character to assume a devilish form with additional powers (based on their current weapon), while the character's strength and speed increase, and health is slowly restored.[2]
+Screenshot
+Dante attacks an enemy with the sword Alastor. The word "Cool!" assesses the player's performance in combat.
+Devil May Cry 2: Dante is generally the game's lead character. Two other playable characters, Lucia and Trish are also available. The ability to perform combination attacks in mid-air and evasion and weapon-change buttons were introduced. With the latter, a player can cycle through ranged weapons without switching to the inventory screen.
+Devil May Cry: Deadshot: A shooter game released for Japanese feature phones in 2003.[3][4][5] It is set in an old castle on a deserted island.[3][4]
+Devil May Cry 3: Dante's Awakening: The main character Dante can use a variety of weapons and fighting styles, allowing the player to focus on favorite techniques or weapons. Each of the four styles gains experience points, which unlock more techniques and abilities without costing red orbs (the series' currency). A second weapon-change button was added, allowing the player to cycle through a character's melee weaponry.[6] The game was re-released as Devil May Cry 3: Special Edition with new skills for Dante and the ability to play as Vergil.[7]
+Devil May Cry: Two different mobile games for feature phones were released in 2007–2008. One has similar gameplay to Devil May Cry 3 and uses enemies and characters from that game. It is also known by the title Devil May Cry: Dante X Vergil.[8] The other one is a 2D side-scrolling beat 'em up.[9]
+Devil May Cry 4: This entry introduces a new protagonist, Nero, who is playable alongside the returning Dante. Nero's Devil Bringer arm gives players the ability to pull enemies toward him or himself toward enemies, perform context-specific attacks or parries, and traverse the environment. Nero is also armed with a sword which can be throttled up, allowing players to pre-charge it for extra damage on the next hit; with precise timing, it can be charged after each attack for extra damage and style. As Dante, players can switch weapons and fighting styles in mid-combat, allowing more varied and unique combos.[10] The game was re-released as Devil May Cry 4: Special Edition, featuring the ability to play as Vergil as well as returning characters Lady and Trish.
+Devil May Cry HD Collection: A collection of the series' first three games for the PlayStation 3 and Xbox 360, ported by Pipeworks Software and Double Helix Games, eventually released on March 22, 2012, in Japan and March 29, 2012, in the US.[11] It was later ported to the PlayStation 4, Windows, and Xbox One on March 13, 2018.[12][13]
+DmC: Devil May Cry: This reboot of the series introduced a new continuity in which the player character Dante and his twin brother Vergil are Nephilim, descendants of an angel and a demon parent. The player could alternate between Angel Mode and Demon mode with specific weapons and enhanced traversal abilities. Further options for accessing hidden areas included the Ophion whip and grappling hook. The gameplay takes place partially in Limbo, a parallel world inhabited by demons, that occasionally intersects with the normal world, changing its architecture and infrastructure to a more hostile form, prompting fast-paced chase sequences and platforming scenarios.[14][15] The game takes place in an urban fantasy setting, inspired by contemporary Western cities, as opposed to the fantastical, Renaissance-themed environments of the other games in the series. The story also touches on criticism of themes of mass media and consumerism.
+Devil May Cry 5: This game follows the original continuity from Devil May Cry 4. It again features Nero and Dante as playable characters, as well as a new character named V. Nero's Devil Bringer arm is replaced with a selection of swappable cybernetic arms dubbed Devil Breakers, each one featuring distinct gameplay mechanics. V remotely commands three demons in battle due to his weak physical state.[16] The game was re-released as Devil May Cry 5: Special Edition, featuring the ability to play as Vergil.
+Devil May Cry: Peak of Combat: A mobile-phone game by Yunchang Games, based on Devil May Cry 3. Its rendition of Dante's appearance was criticized, and the developers promised to fix it when the game left the beta period for release in 2020.[17]
+Plot
+See also: Characters of Devil May Cry
+The events of the series begin two millennia before the first game with the demon Sparda, the Black Knight, defeating Demon World ruler Mundus. Sparda stops Mundus from conquering the human world by sealing several Hellgates and Temen-Ni-Gru (the last gate) with a ritual requiring his blood and the aid of a human priestess. Sparda meets Eva, who gives birth to his twin sons Dante and Vergil.
+
+The plot begins with Devil May Cry 3, a year after Dante has a falling-out with Vergil.[18] A large tower erupts from the ground near the shop, and Dante interprets it as a challenge from Vergil.[19] Dante is defeated in Temen-Ni-Gru by Vergil, who takes his locket and leaves with Arkham. Dante's dormant devil power revives him, and he resumes pursuing his brother. Vergil wants to use the pendants their mother gave them in a ritual to create a portal to the Demon World. The battle is joined by Lady, who wants to avenge her mother's death by Arkham; Arkham manipulated the three into completing the ritual, which would allow him to acquire Sparda's sword: the Force Edge.[20][21] Dante and Vergil defeat him, and resume battling each other. The portal begins to close, and Vergil approaches it. Dante pleads with his brother not to go, but Vergil leaps into the Demon World before the portal closes. Vergil is tested and encounters Mundus, his mother's killer, battling him with his sword Yamato, a magical katana with the power to open portals in space and separate worlds, which once belonged to Sparda. When Lady returns to the human world, she muses on the nature of devils and humans, coining the phrase "devil may cry"; Dante decides to use it as the name for the shop.[22][23]
+
+Dante is confronted in Devil May Cry by Trish, who reveals that Mundus is planning to return and only a descendant of Sparda can defeat him.[24] He explores Mallet Island (where Mundus is set to return), encountering demons which include Mundus' general:[25] the undead Vergil, Nelo Angelo.[26] As Dante approaches Mundus, he falls into a trap which reveals that Trish is the demon's agent; he saves her, however, because she resembles his mother. Trish saves Dante from Mundus, and Dante realizes his father's power.[27] Dante defeats Mundus when Trish helps him return Mundus to the Demon World.[28] Dante and Trish escape as the island collapses and work together in the Devil Never Cry shop.
+
+In the Devil May Cry: The Animated Series anime, Trish is a demon hunter; Dante is the bodyguard of Patty, a young heiress who becomes obsessed with him. Patty's mother is descended from a sorcerer who sealed the power of Abigail, an ancient devil lord. Patty is targeted by Sid, a demon seeking Abigail's power. Lady and Trish fight demons summoned by Sid, and Dante kills him.
+
+Dante is invited by Lucia in Devil May Cry 2 to meet her mother, Matier. Dante learns that Arius is collecting artifacts (Arcana) to summon the demon lord Argosax.[29] Dante flips a coin, and decides to help.[30] Lucia confronts Arius, who reveals that he created her.[31] Lucia gives Dante the last of the Arcana before facing Arius alone.[32] Dante encounters Matier, who asks him to take the Arcana to save Lucia from Arius.[33] Lucia attacks Arius, but he captures her. Dante arrives, trades the Arcana for Lucia, and attacks Arius (who escapes).[34] A stream of energy strikes the Ouroboros tower, and a portal to the demon world opens. Dante and Lucia argue about who will enter, and Dante determines that he will go.[35] After Dante leaves, Arius returns to the human world and Lucia defeats him.[36]
+
+In Devil May Cry 4, Dante and Trish discover a dark conspiracy within the Order of the Sword and investigate while learning of its religious leader named Sanctus and his plans to conquer the world using demonic power. Dante seemingly assassinates Sanctus, only to face a young holy knight named Nero, who had awakened his demonic abilities as a descendant of Sparda. Nero quests to capture Dante, obtaining the katana Yamato along the way, only to learn the Order's dark secrets. Consequently, Nero and his girlfriend Kyrie are captured to further the Order's plans of conquest. Dante's effort to cripple Sanctus' plans culminates in freeing Nero, who finally confronts and defeats Sanctus before rescuing Kyrie. The two demon hunters part ways on good terms as Dante entrusts Nero with the Yamato.
+
+In Devil May Cry 5, set several years after Devil May Cry 4, Nero runs a mobile branch of Dante's Devil May Cry business.[37] He befriends Nico, a weapons artist and descendant of the gunsmith who crafted Dante's Ebony and Ivory handguns.[38] Nero's Devil Bringer arm from Devil May Cry 4 is stolen; armed with a prosthetic Devil Breaker created by Nico, he leaves with Dante and the demon hunter V to face their "strongest foe yet".[39][40]
+
+Although the series' timeline had placed Devil May Cry 4 before Devil May Cry 2, it was retconned with the release of Devil May Cry 5.[41][42] DmC: Devil May Cry, developed by Ninja Theory, is not part of the timeline and takes place in an alternate universe from the main series. Along with a very different looking Dante, it moves away from the gothic look of the previous games to a more contemporary setting with some social commentary on mass media and culture.[43]
+
+Development
+See also: Development of Resident Evil 4
+16th-century painting of Dante Alighieri
+The series is loosely based on the Divine Comedy by Dante Alighieri (pictured).
+After the completion of Resident Evil 2 in 1998, preliminary work on a PlayStation 2 installment of the Resident Evil series began by Team Little Devil under the direction of Hideki Kamiya.[44] Early research and development included a trip to Spain to examine castles as a basis for the game's environments. Its prototype, however, was a radical departure from the Resident Evil formula and the survival horror genre. Kamiya rewrote the story and changed its premise, drawing from Italian poet Dante Alighieri's Divine Comedy[45][46] for Devil May Cry.[47]
+
+Strider, another Capcom franchise, is cited as a vital influence on the Devil May Cry games and their action, particularly in their inclusion of the "boss rush".[48][49]
+
+Despite the success of the original game, its sequel was not created by Kamiya or Team Little Devils.[50][51] Although an unidentified director was placed in charge of the project, Capcom was dissatisfied with their work and assigned Hideaki Itsuno "with only 4 to 5 months remaining in development" to steer the project back on course.[52] Despite Itsuno's limited time on the project, he is the only person credited as director in the final version of the game.[53] According to producer Tsuyoshi Tanaka, the design aim was to make Devil May Cry 2 bigger than its predecessor; Tanaka estimated that the game's environments were about nine times larger than the first.[54]
+
+After Devil May Cry 2's mixed reception, Capcom decided to develop the next game like the more critically successful Devil May Cry. Gameplay elements, such as environment size and battle engine, were reconsidered.[55] In the original game, Vergil was killed by demons early and his soul was controlled by Mundus; Bingo Morihashi wanted to create an alternate universe in which Vergil was alive. However, Kamiya gave Morihashi the freedom to rework Vergil's backstory and make him a living teenager for Devil May Cry 3.[56] As a result, the game was designed as a prequel to the series, set several years before the events of the first game.
+
+Development of Devil May Cry 4 began shortly after its predecessor's success.[57] The development team had 80 members.[58] A new protagonist was discussed many times at Capcom, but was not approved until producer Hiroyuki Kobayashi said that Dante had to be in the game.[59] Kobashi said before the game's release that they wanted to make Dante seem significantly more powerful than Nero, to create an obvious difference between the strength of a "veteran" compared to a "rookie".[60] Writer Morihashi collaborated with film director Yuji Shimomura, who worked on the earlier games. Morihashi left Capcom at one point, but returned at Itsuno's request. It took him a year to finish writing the game; he had difficulty with the characterization of Nero, the new protagonist. Dante returned as a supporting character.[61]
+
+Although the fourth game was a commercial and critical success, the staff considered rebooting the series because other game series had better sales.[62] They chose Ninja Theory, impressed with their work on Heavenly Sword (which the staff thought would work with a Devil May Cry game).[63] However, in 2013 Itsuno expressed interest in developing a fifth installment.[64] It was originally thought that Itsuno intended for the series to go on hiatus or end if Devil May Cry 4: Special Edition was not a commercial success,[65] but he said in a GameSpot interview that the series' future did not depend on Devil May Cry 4: Special Edition's sales. He alleviated fears that DmC: Devil May Cry's sales would kill the series, confirming that Capcom was satisfied with them.[66] In mid-January 2016, Itsuno tweeted that he had begun work on a new project.[67] Reuben Langdon and Johnny Yong Bosch, who had done voice acting and motion capture for Dante and Nero in Devil May Cry 4, took pictures of themselves in motion-capture gear in March 2016; this led to speculation that a new Devil May Cry game was in development.[68] According to Capcom Vancouver, "It's not a game that [they] announced that [they are] working on at [their] studio".[69] On May 17, 2018, the domain name "DevilMayCry5.com" was registered under Capcom's Onamae domain register.[70]
+
+Devil May Cry 5, featuring the return of Dante and Nero, was confirmed at E3 2018 for release the following year.[71] Most of the team had worked on the recently released Resident Evil 7, and were experienced with the game engine; Itsuno was influenced by his work in Monster Hunter: World to provide content appealing to new gamers but also felt that making the game challenging would appeal to long-time fans.[72] Other members of the staff had worked on the reboot game DmC: Devil May Cry, but the Osaka team was more willing to make a sequel to the fourth installment of the main series. The team listened to fan opinions about previous games to ensure that the new game appealed to them; an "auto" mode facilitated combos.[73] Itsuno was moved to tears by a film in which three robots combined into a giant robot to overcome their foe, and wanted to create similar moments.[74] He wanted to convey the style of a Hollywood movie such as Marvel's Avengers series.[75] In November 2017, Kamiya expressed interest in making a remake of the first installment and a crossover game with Dante and Bayonetta.[76]
+
+Other media
+Light novels
+The series has several print adaptations. Two Devil May Cry light novels, written by Shinya Goikeda and illustrated by Shirow Miwa, were published in Japan in 2002 and translated and published in the United States in 2006. The first, Devil May Cry Volume 1, was published in Japan in conjunction with the release of the first game and explored Dante in an adventure set before the game's events. The second, entitled Devil May Cry Volume 2 in the US, was published in Japan to coincide with the second game's release and is set after the first game's events. Tokyopop published the books in the United States in June and November 2006, respectively.[77][78]
+
+Bingo Morihashi wrote a Devil May Cry 4 novel entitled Devil May Cry 4 Deadly Fortune. The two-volume novel, published in Japan in 2009, has a number of scenes which were not included in the original game due to time constraints.[79][80] A prequel novel by Morihashi titled Before the Nightmare, set before Devil May Cry 5 and leading to the beginning of the game, was published on March 1, 2019.[81]
+
+Comics and manga
+Three issues of a comic adaptation of the first game were published by the Canadian Dreamwave Productions in 2004, but the series was left unfinished when the company went bankrupt the following year.[82] On July 25, 2008, WildStorm (a DC Comics imprint) and Capcom announced that they would collaborate on a Devil May Cry comic-book series. Details about the series were planned to be announced at a later date,[83] but no new information has been provided.
+
+Two volumes of a planned three-part Devil May Cry 3 manga series have been published in Japan and the United States. Set a year before the events of Devil May Cry 3, the manga describes how the characters come to be at the beginning of the game.
+
+On March 7, 2019, Capcom announced that a tie-in manga entitled Devil May Cry 5 Visions of V would be serialized on the Japanese manga-hosting site Line Manga (LINE マンガ).[84] The manga's prologue was published before the serialization began. Illustrated by Tomio Ogata, the manga (only available in Japan) would update every other Sunday beginning on April 27.[85][86][87]
+
+Animation
+Anime
+Main article: Devil May Cry: The Animated Series
+An anime series, Devil May Cry: The Animated Series, premiered on Japan's Wowow TV network on June 12, 2007. The 12-episode series,[88][89] produced by Madhouse, was directed by Shin Itagaki. Bingo Morihashi, a writer of the third and fourth games, was one of its writers.
+
+Animated series
+Main article: Devil May Cry (TV series)
+In November 2018, Adi Shankar announced that he had acquired the rights to produce a Devil May Cry animated series for Netflix.[90] Shankar, who has been completing a similar animated series for Konami's Castlevania franchise, said that he considered both series part of a shared "Bootleg Multiverse".[91]
+
+In November 2021, Shankar revealed that the show's first season will have 8 episodes.[92] He also have plans for a connected "multi-season arc", like what he did with Castlevania, and that fan-favorite characters will make their debut throughout the series.[92] In September 2024, Netflix announced that the series will premiere in April 2025.[93]
+
+Film
+On February 28, 2011, Screen Gems (which made Resident Evil into a film series) had purchased feature-film rights to the Devil May Cry series.[94] Kyle Ward was hired to write the screenplay for the film (based on DmC: Devil May Cry), which would be Dante's origin story.[95][96][97] No news has emerged about the project's status.
+
+Plays
+Capcom produced Sengoku Basara vs. Devil May Cry a staged amalgam of the Devil May Cry and Sengoku Basara series, in August 2015. In the play, Dante, Lady, Trish, and Vergil encounter mysterious historical ruins while chasing a devil and are sent back in time to Japan's Warring States period; there, they meet Date Masamune, Sanada Yukimura, and other characters from the Sengoku Basara franchise. The play ran at the AiiA 2.5 Theater in Tokyo for 18 performances. Masanari Ujigawa wrote and directed the play, and Hideaki Itsuno and Izaki Matsuno collaborated on the scenery. Kazushi Miyakoda and Tetsuya Yamaura were the producers, supervised by Hiroyuki Kobayashi and Makoto Yamamoto.[98]
+
+Devil May Cry: The Live Hacker, a musical, ran for 13 performances in March 2019 at Zepp DiverCity in Tokyo. Jun Yoriko wrote and directed the musical and its video,[99] and a DVD was released in late August of that year.[100]
+
+Soundtracks
+Main article: Music of the Devil May Cry series
+The Devil May Cry series has seen the release of seven separate soundtracks. Initially, Capcom was very reluctant to release an officially sanctioned soundtrack for the Devil May Cry series, due to worries that the products would sell poorly. As a means of testing the market, Capcom decided to ask for pre-release sales.[101]
+
+In other games
+Devil May Cry characters appear in the PlayStation versions of the Viewtiful Joe games, another Capcom series created by Hideki Kamiya; Dante is a playable character in the PlayStation 2 port of the first Viewtiful Joe. The PSP version of Viewtiful Joe: Red Hot Rumble also includes Dante and costumes based on Vergil, Trish, Sparda, Marionette, and Plasma.
+
+In a deal between Capcom and Atlus, Megami Tensei character designer Kazuma Kaneko created Dante and Vergil's demonic forms in Devil May Cry 3. In return, Atlus included Dante in his Devil May Cry 2 costume as a character in an enhanced release of Shin Megami Tensei: Nocturne (Maniax in Japan). The English localization of Nocturne was based on the game's Maniax edition.[102]
+
+Dante and Trish are playable characters in Marvel vs. Capcom 3: Fate of Two Worlds, and Vergil, Dante, and Trish are playable characters in its Ultimate Marvel vs. Capcom 3 update. Dante and Vergil retain their Kazuma Kaneko-designed Devil Trigger forms since they are based on the third game of the Devil May Cry series. Dante is also a playable character in Marvel vs. Capcom: Infinite.
+
+The DmC: Devil May Cry version of Dante is a playable character in PlayStation All-Stars Battle Royale, and he is a playable character in Project X Zone for the Nintendo 3DS as half of a pair with Darkstalkers' Demitri Maximoff; Lady is a separate character. Dante returns in its sequel, Project X Zone 2, with Vergil; Vergil's future self, Nelo Angelo, is a rival character.
+
+On June 28, 2021, it was announced that a Mii costume based on Dante would appear in the crossover fighting game Super Smash Bros. Ultimate, as a set for the Mii Sword fighter character with clothing inspired by his design from the original Devil May Cry game. The set was released the following day alongside the game's new DLC fighter, Kazuya Mishima from the Tekken series.[103]
+
+Reception
+Aggregate review scores
+As of March 11, 2019.
+Game	Metacritic
+Devil May Cry	(PS2) 94 [104]
+Devil May Cry 2	(PS2) 68 [105]
+Devil May Cry 3: Dante's Awakening	(PS2) 87 [106]
+(PC) 66 [107]
+Devil May Cry 4	(PS3) 84 [108]
+(X360) 84 [109]
+(PC) 78[110]
+DmC: Devil May Cry	(X360) 86 [111]
+(PS3) 85 [112]
+(PC) 85 [113]
+Devil May Cry 5	(PC) 89 [114]
+(PS4) 88 [115]
+(XONE) 87 [116]
+By December 31, 2024, the Devil May Cry series has sold 33 million units worldwide;[1] each installment is a Capcom Platinum Title, selling over a million units.[117] As of December 31, 2024, Devil May Cry 5 is the best-selling game in the series having sold approximately 10 million units worldwide through the combined sales of the Standard and Special Edition .[118]
+
+The series has received generally positive reviews. In 2010, IGN ranked Devil May Cry number 42 and Devil May Cry 3 number 18 on its "Top 100 PlayStation 2 Games" list.[119][120] The series' gameplay has been praised as innovative.[121][122][123] Devil May Cry has been cited as beginning a subgenre of "extreme combat" action games, which focus on powerful heroes fighting hordes of foes with stylized action.[124] It has been described as the first game that "successfully captured the twitch-based, relentlessly free-flowing gameplay style of so many classic 2D action games".[125] The series is the standard against which other 3D hack and slash action games are measured, with comparisons in reviews of games such as God of War,[126][127] Chaos Legion,[128] and Blood Will Tell.[129] Devil May Cry 5 has three protagonists with distinctive abilities, increasing the number of moves available.[130][131][16] According to Hiroyuki Kobayashi, the team's work on Devil May Cry 4 influenced Capcom's Dragon's Dogma.[132]
+
+Response to the series' narrative has been mixed, despite Dante's increased popularity.[133][134] The series' popularity led to a line of Devil May Cry action figures produced by Toycom,[135] and Kaiyodo produced a Devil May Cry 2 and Devil May Cry 3 Dante action figure.[136][137]
+
+According to a gamecritics.com reviewer, the story was overly short and the characters underdeveloped.[122] Dante's cockiness was noted as largely absent from Devil May Cry 2.[138][139]
+
+Devil May Cry 3 and its relationships among the cast in the narrative were found to be superior to Kamiya's original version.[140][141][142] Dante's dynamic with Nero in the following game was praised, with critics saying that neither overshadowed the other.[143][144][145] Devil May Cry 5's handling of its characters and their connections was well received.[146][130]
+
+Although well received by most critics, DmC: Devil May Cry was highly controversial with many long time fans due to the dramatic change in Dante's appearance and the move away from the series' iconic gothic style to a modern urban setting.[147]
+
+Notes
+ Japanese: デビル メイ クライ, Hepburn: Debiru Mei Kurai
+References
+ "Game Series Sales". CAPCOM. December 31, 2024. Retrieved April 3, 2025.
+ Devil May Cry Instruction Booklet. Capcom. 2001.
+ "デビル メイ クライ DEAD SHOT". Capcom. Archived from the original on February 8, 2012. Retrieved October 4, 2024.
+ "悪魔狩人（デビルハンター）i-modeに降臨！". Capcom. Archived from the original on June 11, 2003. Retrieved October 4, 2024.
+ McFerran, Damien (October 4, 2024). "9 Capcom Mobile Games – Including A Devil May Cry Spin-Off – Have Been Saved From Digital Oblivion". Time Extension. Hookshot Media. Retrieved October 4, 2024.
+ "List of styles in Devil May Cry 3". devilmaycry.org. Archived from the original on September 17, 2007. Retrieved April 3, 2007.
+ Dunhan, Jeremy (November 22, 2006). "Devil May Cry 3: Dante's Awakening Special Edition Review". IGN. Archived from the original on March 10, 2013. Retrieved April 25, 2013.
+ "Devil May Cry Mobile". Siliconera. Gamurs. April 2, 2007. Archived from the original on August 3, 2020. Retrieved October 4, 2024.
+ Yarwood, Jack (February 13, 2023). "Did You Know Capcom Made A 3D Devil May Cry Game For Feature Phones?". Time Extension. Hookshot Media. Retrieved February 13, 2023.
+ "Official English language DMC4 site from Capcom Japan". Archived from the original on January 24, 2007. Retrieved January 31, 2007.
+ Sinclair, Brendan (October 17, 2011). "Devil May Cry compiled on PS3, Xbox 360". GameSpot. Retrieved March 21, 2020.
+ Pereira, Chris (December 8, 2017). "Devil May Cry HD Collection Coming To PS4, Xbox One, And PC". GameSpot. Retrieved March 21, 2020.
+ McWhertor, Michael (December 12, 2017). "Devil May Cry collection coming to PS4, Xbox One and PC in 2018". Polygon. Retrieved March 13, 2021.
+ A Key Addition To DmC Devil May Cry Is Dynamic, Changing Environments. Siliconera (2011-06-14). Retrieved on 2013-08-23.
+ Bierton, David. (2013-01-27) DmC PC - the definitive Devil May Cry experience? • Face offs •. Eurogamer.net. Retrieved on 2013-08-23.
+ White, Olivia (March 6, 2019). "Devil May Cry 5 review: Dante and friends return in a stylish and supremely fun demon-hunting blockbuster". The Daily Telegraph. Archived from the original on March 6, 2019. Retrieved March 6, 2019.
+ "Devil May Cry: Pinnacle of Combat Devs To Address Dante's Face And Other Feedback From Beta". Siliconera. January 3, 2020. Archived from the original on January 3, 2020. Retrieved January 4, 2020.
+ Arkham: Is your name Dante? Son of Sparda? Dante: Where did you hear that? Arkham: From your brother. He sent this invitation to you. Please accept it. Dante: Invitation huh? (Devil May Cry 3) Capcom, 2005
+ Dante: It's been nearly a year since we last met. Where does the time go? No doubt you've got some fun planned for me. Right Vergil? (Devil May Cry 3) Capcom, 2005
+ Jester: It was quite a ride, you know! If any of you had died before getting here, our little plan would have gone to waste! Therefore, my job was to get you to battle each other in order to weaken you. But at the same time, I needed to guide you here and make sure you were kept alive. I even went so far as dressing like a complete idiot! (Devil May Cry 3) Capcom, 2005
+ Arkham: He plucks the threads that make us dance, finger and toe! We surrender in joy to the lowest of the foul and rank; we submerge through darkness, rancid filth. Hour by hour, we move downward, ever closer to Hell, in a slow, steady gait. Now, let the world resonate! Sloth! Gluttony! Greed! Envy! Lust! Wrath! And pride! A bell of chaos that tolls human desires! After two thousand long years, the once sealed gate to the demonic world will open! Destruction! Carnage and Despair! Let your instincts drive you! Entrap this world in fear! As its very name, Temen-ni-gru strikes terror into the heart of mankind. Then I will become the ultimate ruler of this wasteland engulfed with pandemonium. The demonic power that Sparda once imprisoned ... will be mine! (Devil May Cry 3) Capcom, 2005
+ Lady: Are you crying? Dante: It's only the rain. Lady: The rain already stopped. Dante: Devils never cry. Lady: I see. Maybe somewhere out there, even a devil may cry when he loses a loved one. Don't you think? Dante: Maybe. (Devil May Cry 3) Capcom, 2005
+ Lady: Oh, speaking of a kind devil, he finally decided on a name for his shop. It took him quite a while to pick one. Want to know the name? Devil May Cry. (Devil May Cry 3) Capcom, 2005
+ Trish: Yes, his powers were sealed by Sparda, he's attempting to take control of the human world again. He has been preparing to open the gate on ... Mallet Island. (Devil May Cry) Capcom, 2001
+ Griffon: Yours is definitely the power of Sparda ... No. Even more so. (Devil May Cry) Capcom, 2001
+ Dante: This stinking hole was the last place that I thought I'd find anyone with some guts. (Devil May Cry) Capcom, 2001
+ Dante: How much longer are you going to keep zapping? Come out and show yourself, Mundus! (Devil May Cry) Capcom, 2001
+ Trish: Dante, use my power! Dante: Trish! Okay! (Devil May Cry) Capcom, 2001
+ Matier: Son of Sparda ... we must ask this favor, of you ... You see, there's a man who's transformed our land into a demon's paradise; his name is Arius. And although he is the president, of an international public corporation ... he uses the demon power. Please, deal with Arius and his master for us. (Devil May Cry 2) Capcom, 2003
+ (After flipping a coin and noticing the result is heads.) Dante: ... Looks like it's your lucky day. (Devil May Cry 2) Capcom, 2003
+ Arius: You are my creation. Lucia: Liar! Matier is my mother. Arius' secretary removes her mask, revealing the fact her face is identical to Lucia's. Arius: She merely found you when you were about to be disposed of, and then raised you as a soldier. Is that what you consider to be a mother? (Devil May Cry 2) Capcom, 2003
+ Lucia: But ... actually ... I do not deserve this power ... Lucia: Bring this to Matier for me ... please ... I ... I've got something that I need to take care of ... (Devil May Cry 2) Capcom, 2003
+ Matier: There is one more thing I need to ask of you, son of Sparda. My daughter went to face Arius all by herself ... Please, take these, and save Lucia. (Devil May Cry 2) Capcom, 2003
+ Arius: You cannot win ... someone is holding you back... Lucia: Ugh, forget about me! Kill Arius! Dante: Don't worry. I've got you... (Devil May Cry 2) Capcom, 2003
+ Lucia: But ...! Dante: Let's leave it to fate. Heads, I go; Tails, you go. He flips the coin and it lands as heads again Dante:See ya around. Lucia: Don't you want to hear the story about Sparda from ... Matier? Dante: I know ... He did the same thing ... Hold on to my coin, Lucia. (Devil May Cry 2) Capcom, 2003
+ Arius: You are not human! You are just a monster ... a monster that I created! Lucia: Dante told me ... Devils never cry! (Devil May Cry 2) Capcom, 2003
+ Sato (June 10, 2018). "Devil May Cry 5 Shares A Closer Look At Nero And His Stylish Action". Siliconera. Retrieved September 22, 2018.
+ Mamiit, Aaron (June 13, 2018). "Here's Everything We Know On 'Devil May Cry 5': Release Date, Story, Gameplay, And More". Tech Times. Retrieved September 22, 2018.
+ Arif, Shabana (June 25, 2018). "Devil May Cry 5 Director Talks Story Details, Playable Demo at Gamescom". IGN. Retrieved September 22, 2018.
+ Yin-Poole, Wesley (September 20, 2018). "Devil May Cry 5's third playable character is V". Eurogamer. Retrieved September 22, 2018.
+ Matt Walker [@gypsyOtoko] (February 7, 2019). "We've changed it- now DMC 4 comes after 2! ^^;" (Tweet) – via Twitter.
+ "Devil May Cry 5's Producer Explains the Series' Timeline Changes". IGN. March 11, 2019. Retrieved March 14, 2019.
+ "DmC Devil May Cry Takes Place In A Parallel World With A Different Dante". November 2011.
+ Mielke, Tuhin (August 18, 2006). "The Okami Family Tree". 1UP.com. Archived from the original on June 5, 2012. Retrieved March 29, 2007.
+ Mielke, James. "Postmortem on DMC3:SE". 1UP.com. Retrieved June 23, 2013.
+ Hideki Kamiya (July 2001). "シナリオの話". Devil May Cry Column. Capcom. Archived from the original on 6 March 2010. Retrieved 17 July 2010.
+ "E3 2001: Interview with Shinji Mikami". IGN. May 17, 2001. Retrieved May 25, 2007.
+ Fahey, Rob (January 1, 2007). "Strider 1/2 •". Eurogamer.net. Retrieved August 9, 2020.
+ Jones, Darran (24 Apr 2010). "The Making of... Strider". Retro Gamer (76). pp. 48-53.
+ Team Little Devils (October 17, 2001). Devil May Cry. Capcom Entertainment, Inc. Scene: staff credits.
+ Kristan Reed (February 20, 2003). "The Devil's in the detail". Eurogamer. Eurogamer Network Ltd. Retrieved October 19, 2010.
+ Bob Mackey (June 29, 2015). "The Devil's Own: Capcom's Hideaki Itsuno on a Decade-Plus with Dante". USgamer. Archived from the original on April 29, 2016. Retrieved March 9, 2016.
+ Capcom (January 25, 2003). Devil May Cry 2. Capcom Entertainment, Inc. Scene: staff credits.
+ Steinberg, Scott (September 18, 2002). "GameSpot Preview, page 1". Retrieved July 20, 2008.
+ Brightman, James (April 6, 2005). "Devil May Cry 3 Poised for Success". GameDaily. Archived from the original on September 29, 2007. Retrieved 2007-04-12.
+ Devil May Cry: 3142 Graphic Arts. Capcom, Udon Entertainment. 2015. p. 211. ISBN 978-1927925485.
+ Devil May Cry: 3142 Graphic Arts. Capcom, Udon Entertainment. 2015. p. 208. ISBN 978-1927925485.
+ "Devil May Cry 4: Kobayashi Interview". Video Games Daily. January 2, 2008. Retrieved August 6, 2018.
+ Devil May Cry: 3142 Graphic Arts. Capcom, Udon Entertainment. 2015. p. 213. ISBN 978-1927925485.
+ James Mielke (January 31, 2008). "Previews: Devil May Cry 4". 1UP.com. Archived from the original on January 16, 2013. Retrieved February 25, 2008.
+ Devil May Cry: 3142 Graphic Arts. Capcom, Udon Entertainment. 2015. p. 209. ISBN 978-1927925485.
+ "DmC: Devil May Cry". Eurogamer. September 22, 2010. Retrieved May 9, 2013.
+ Ciolek, Todd (October 17, 2012). "The X Button In the Details". Anime News Network. Retrieved October 17, 2012.
+ "Dragon's Dogma Director Wants to Make a Sequel on PS4, Also Rival Schools 3 and Devil May Cry 5". October 21, 2013. Archived from the original on January 3, 2017. Retrieved October 27, 2013.
+ "第三十三回 デビルが歩む魔界への道（後編）". Capcom. Archived from the original on June 12, 2018. Retrieved June 14, 2015.
+ "Devil May Cry's Future isn't Tied to how well Devil May Cry 4: Special Edition sells".
+ Hideaki Itsuno [@tomqe] (January 13, 2016). "Happy New Year! The next project has already begun. Please wait to look forward to but can not be announced" (Tweet) – via Twitter.
+ "Screen Shot Of Mocap Actors Lead To DEVIL MAY CRY 5 Rumor". GameTyrant. March 9, 2016. Retrieved March 14, 2016.
+ "Capcom Posts Vague Answer when Quizzed About Devil May Cry 5". August 2, 2016.
+ "Devil May Cry 5 domain name registered". June 4, 2018.
+ E3 2018: Devil May Cry 5 Confirmed At Xbox One Press Conference, GameSpot
+ "Devil May Cry 5's director wanted to prove pure action games still had a place". The Verge. March 29, 2019. Archived from the original on June 29, 2019. Retrieved June 29, 2019.
+ "Devil May Cry 5 interview: Capcom on satisfying fans, balancing difficulty and learning from Ninja Theory". VG247. September 27, 2018. Archived from the original on June 29, 2019. Retrieved June 29, 2019.
+ "Devil May Cry 5's Director Tells Us How They Made Combat Feel So Damn Good". Kotaku. March 28, 2019. Archived from the original on July 9, 2019. Retrieved June 28, 2019.
+ Park, Junyeong (January 9, 2019). "데빌메이크라이5, "어벤저스에 버금가는 그래픽 구현하려고 했다"". ThisIsGame. Retrieved September 18, 2024.
+ "Hideki Kamiya Wants To Do A Viewtiful Joe Or DMC Remake, And A Dante x Bayonetta Crossover". Siliconera. November 20, 2017.
+ Capcom; Goikeda, Shinya (June 13, 2006). Amazon.com Listing for Devil May Cry Volume 1. TokyoPop. ISBN 1598164503.
+ Capcom; Goikeda, Shinya (November 7, 2006). Amazon.com Listing for Devil May Cry Volume 2. TokyoPop. ISBN 1598164511.
+ "デビルメイクライ４ -Deadly Fortune-1" (in Japanese). Capcom. Archived from the original on June 3, 2013. Retrieved May 2, 2013.
+ "デビルメイクライ４ -Deadly Fortune-2" (in Japanese). Capcom. Archived from the original on June 2, 2013. Retrieved May 2, 2013.
+ Devil May Cry 5 -Before the Nightmare-. Kadokawa. 2019. ISBN 978-4041080924.
+ "Dreamwave Productions closes up shop". Comic Book Resources. Archived from the original on October 11, 2007. Retrieved April 23, 2007.
+ Mike Fahey (July 29, 2008). "Resident Evil And Devil May Cry Comics On The Way". Kotaku. Retrieved August 31, 2008.
+ "Visions of V Announced". March 8, 2019.
+ "Tomio Ogata's Visions of V". March 8, 2019.
+ "Visions of V LINE MANGA". March 8, 2019.
+ "Devil May Cry 5 Game Gets Manga Spinoff About V". March 9, 2019.
+ "ActiveAnime:Devil May Cry Anime and Pre Site Opening". Archived from the original on April 17, 2007. Retrieved January 23, 2007.
+ "Devil May Cry anime official site (in Japanese)". Retrieved January 23, 2007.
+ Atkinson, John (November 17, 2018). "Devil May Cry Anime Series Coming to Netflix". Screen Rant. Retrieved October 17, 2021.
+ Griffin, David (November 16, 2018). "Devil May Cry Series Joins Castlevania In New Multiverse From Adi Shankar". IGN. Retrieved November 16, 2018.
+ Valentine, Evan (November 5, 2021). "Netflix's Devil May Cry Anime Will Be "Multiple Seasons". ComicBook.com. Retrieved November 8, 2021.
+ Rayna, Leo (September 19, 2024). "Netflix Reveals Explosive Debut Teaser Trailer for Capcom's New Devil May Cry Anime Series". Comic Book Resources. Retrieved September 19, 2024.
+ Stewart, Andrew; Graser, Marc (February 28, 2011). "'Devil May Cry' videogame heading to bigscreen". Variety. Retrieved on December 23, 2020.
+ Tom Magrino. "E3 2011: Devil May Cry Film Based On New Game". Gamespot.
+ Lavigne, Patty (January 15, 2015). "Devil May Cry Movie Release Date, Updates, Storyline: What this Game Turned Movie is Going to Turn Out to Be". Cross Map. Archived from the original on December 8, 2015. Retrieved December 4, 2015.
+ Rajasekhar, Gouravaram (January 18, 2016). "'Devil May Cry' Movie Adaptation Still Happening? Norman Reedus Or Brad Pitt To Play Dante?". Youth Health Mag.
+ "More Cast Revealed for Sengoku Basara vs. Devil May Cry Stage Play". May 8, 2015.
+ "Devil May Cry: The Live Hacker Reveals Cast Members in Costume". January 18, 2019.
+ "Devil May Cry ーthe Live Hackerー".
+ Niizumi, Hirohiko (August 10, 2004). "Capcom considers Devil May Cry soundtrack". Archived from the original on September 30, 2007. Retrieved July 17, 2022.
+ "Atlus USA presents Shin Megami Tensei: Nocturne". Atlus. Archived from the original on October 31, 2012. Retrieved April 16, 2007.
+ McWhertor, Michael (June 28, 2021). "Dante from the Devil May Cry series coming to Smash Bros. as Mii Fighter". Polygon. Retrieved June 29, 2021.
+ "Devil May Cry Reviews". Metacritic. Retrieved September 11, 2015.
+ "Devil May Cry 2 Reviews". Metacritic. Retrieved September 11, 2015.
+ "Devil May Cry 3: Special Edition Reviews". Metacritic. Retrieved September 11, 2015.
+ "Devil May Cry 3: Special Edition Reviews". Metacritic. Retrieved September 11, 2015.
+ "Devil May Cry 4 Reviews". Metacritic. Retrieved September 11, 2015.
+ "Devil May Cry 4 Reviews". Metacritic. Retrieved September 11, 2015.
+ "Devil May Cry 4 Reviews". Metacritic. Retrieved September 11, 2015.
+ "DmC Devil May Cry Reviews". Metacritic. Retrieved September 11, 2015.
+ "DmC Devil May Cry Reviews". Metacritic. Retrieved September 11, 2015.
+ "DmC Devil May Cry Reviews". Metacritic. Retrieved September 11, 2015.
+ "Devil May Cry 5 for PC Reviews". Metacritic. Retrieved March 6, 2019.
+ "Devil May Cry 5 for PlayStation 4 Reviews". Metacritic. Retrieved March 6, 2019.
+ "Devil May Cry 5 for Xbox One Reviews". Metacritic. Retrieved March 6, 2019.
+ "Platinum Titles". Capcom. January 17, 2007. Archived from the original on February 11, 2007. Retrieved April 4, 2007.
+ "Platinum Titles". Capcom. Archived from the original on December 1, 2016. Retrieved February 17, 2020.
+ "Top 100 PlayStation 2 Games". IGN. Archived from the original on February 1, 2014. Retrieved November 16, 2012.
+ "Top 100 PlayStation 2 Games". IGN. Archived from the original on January 3, 2015. Retrieved November 16, 2012.
+ John Bye (August 12, 2001). "Devil May Cry Review". Eurogamer. Archived from the original on September 30, 2007. Retrieved July 20, 2008.
+ Mike Doolittle (November 28, 2001). "Devil May Cry review". Gamecritics.com. Archived from the original on September 22, 2008. Retrieved July 20, 2008.
+ James Tapia. "Devil May Cry Review". The Electric Playground. Archived from the original on June 10, 2008. Retrieved July 20, 2008.
+ Bateman, Chris; Richard Boon (August 29, 2005). 21st Century Game Design. Charles River Media. pp. 246–247. ISBN 978-1-58450-429-0.
+ Ahmed, Shahed (October 17, 2001). "Gamespot Devil May Cry review". GameSpot. Retrieved March 29, 2007.
+ "God of War". IGN. Archived from the original on September 14, 2008. Retrieved April 3, 2007.
+ "God of War Review". Playstation World. June 16, 2005. Retrieved April 3, 2003.
+ Varanini, Giancarlo (August 4, 2003). "Chaos Legion review". GameSpot. Retrieved April 3, 2007.
+ Bedigian, Louis (September 29, 2004). "Blood Will Tell review". Gamezone. Archived from the original on April 12, 2007. Retrieved April 3, 2007.
+ "Devil May Cry 5 review". VideoGamer.com. March 6, 2019. Archived from the original on March 7, 2019. Retrieved March 6, 2019.
+ Saltzman, Mitchell (March 6, 2019). "Devil May Cry 5 Review". IGN. Retrieved March 6, 2019.
+ "Dragon's Dogma Interview Part 1: From Devils To Dragons". Siliconera. September 2, 2011. Retrieved March 20, 2020.
+ Rocco Inzauto, Edward (February 25, 2007). "Top 10: Most Badass Video Game Characters". Archived from the original on January 29, 2009. Retrieved April 20, 2007.
+ "Top ten coolest games". Archived from the original on August 9, 2007. Retrieved April 20, 2007.
+ Borst, Brian (June 1, 2003). "Devil May Cry Action Figures review". Archived from the original on May 16, 2006. Retrieved April 20, 2007.
+Borst, Brian (June 4, 2003). "Devil May Cry Action Figures". Pop Culture Shock. Archived from the original on January 16, 2012. Retrieved January 16, 2012.
+ "Amazon.com Listing for Devil May Cry 2 Action Figures". Amazon. Retrieved April 23, 2007.[dead link]
+ "Amazon.com Listing for Devil May Cry 3 Dante Revoltech action figure". Amazon. Retrieved April 23, 2007.
+ "Devil May Cry 2 review". GameSpy. Archived from the original on July 24, 2008. Retrieved April 15, 2007.
+ Railey, Dave (April 16, 2012). "Devil May Cry: HD Collection". Anime News Network. Archived from the original on June 15, 2013. Retrieved June 3, 2013.
+ "Devil May Cry 3". GamesRadar+. Future. 28 July 2004. Archived from the original on 25 July 2018. Retrieved 24 July 2018.
+ Doee, Mark (4 February 2008). "Devil May Cry: a series retrospective – part III". Engadget. Verizon Communications. Archived from the original on 25 July 2018. Retrieved 25 July 2018.
+ Lopez, Miguel (1 March 2005). "Devil May Cry 3: Dante's Awakening". GameSpy. IGN. Archived from the original on 26 October 2016. Retrieved 25 July 2018.
+ "Devil May Cry 4 Review". GameSpot. Archived from the original on June 27, 2018. Retrieved June 26, 2018.
+ Joe, Juba. "Game Informer: Devil May Cry 4 Review". Game Informer. Archived from the original on May 12, 2008. Retrieved February 5, 2008.
+ Haynes, Jeff (February 4, 2008). "IGN: Devil May Cry 4 Review (PS3)". IGN. Archived from the original on January 1, 2012. Retrieved February 5, 2008.
+ Espineli, Matt (March 6, 2019). "Devil May Cry 5 Review". GameSpot. Retrieved March 6, 2019.
+ "Why Dante Caused So Much Controversy in DMC: Devil May Cry". December 29, 2020.
+External links
+
+Wikimedia Commons has media related to Devil May Cry.
+
+Wikiquote has quotations related to Devil May Cry.
+Capcom USA's Devil May Cry portal
+Devil May Cry series at MobyGames
+vte
+Devil May Cry
+Games	
+Devil May Cry23: Dante's Awakening4 Special EditionDmC5
+
+Media	
+MusicNovelsDevil May Cry 3 (manga)Devil May Cry: The Animated Series episodesDevil May Cry (TV series)
+Characters	
+DanteTrishVergilLadyNero
+People	
+Hideki KamiyaHideaki ItsunoHiroyuki KobayashiBingo Morihashi
+Related	
+Viewtiful JoeViewtiful Joe: Red Hot RumbleShin Megami Tensei III: NocturneMarvel vs. Capcom 3 UltimateMarvel vs. Capcom: InfinitePlayStation All-Stars Battle RoyaleProject X ZoneProject X Zone 2Puzzle FighterResident Evil 4Shin Megami Tensei: Liberation Dx2Teppen
+ Category
+vte
+Capcom
+vte
+Dante's Divine Comedy
+Authority control databases Edit this at Wikidata	
+MusicBrainz series
+Categories: Devil May CryCapcom franchisesDark fantasy video gamesScience fantasy video gamesVideo game franchisesVideo game franchises introduced in 2001Video games about demonsVideo games based on mythologyVideo games developed in JapanVideo games developed in the United KingdomVideo games adapted into comicsVideo games adapted into novelsVideo games adapted into television shows
+This page was last edited on 11 April 2025, at 12:45 (UTC).
+Text is available under the Creative Commons Attribution-ShareAlike 4.0 License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+Privacy policyAbout WikipediaDisclaimersContact WikipediaCode of ConductDevelopersStatisticsCookie statementMobile view
+Wikimedia Foundation
+Powered by MediaWiki
+
+Devil May Cry
+
+30 languages
+Add topic
+
+            </p>
+            
+
+            
+
+
+            <h2 id="about">About us</h2>
+            <p>At <b>Around the world</b>, we are
+            a team of passionate travelers
+            dedicated to helping our clients
+            experience the world. With years of
+            experience in the travel industry, 
+            our knowledgeable and experienced 
+            staff will work with you to plan and 
+            book your next journey.
+            </p>
+
+            <a href="#top">Top of the page</a>
+        </div>
     </body>
 
 
-
     <footer>
-
+        <p>&copy; 2025 MyShine. All rights reserved.</p>
+        <p>Contact us at <a href="mailto:contact@myshine.com">contact@myshine.com</a></p>
     </footer>
+    
 </html>

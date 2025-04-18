@@ -1,0 +1,183 @@
+/* Top Border */
+.top-card {
+    background-color: #ffe68036; /* light warm yellow */
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.top-card h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.top-card nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #cc6600; /* warm orange-brown */
+}
+
+.top-card nav a:hover {
+    color: #ff6600; /* brighter summer orange */
+}
+
+/* Main body */
+body {
+    background-color: #fff9e6; /* soft pastel yellow */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #fffbe6, #fff0b3); /* sunny gradient */
+}
+
+/* Toggle Switch Style */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Slider background */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+/* Slider knob */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+/* When checked */
+.switch input:checked + .slider {
+    background-color: #ffcc00; /* sunny yellow glow */
+}
+
+.switch input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Normalize table and its cells */
+table {
+    width: 100%;
+    table-layout: fixed; /* Ensures all columns are the same width */
+    border-collapse: collapse; /* Removes space between borders */
+}
+
+td {
+    width: 33.33%; /* Each column will take 1/3 of the table width */
+    padding: 10px; /* Adds some padding inside the cells */
+    text-align: center; /* Centers the content inside each cell */
+    vertical-align: middle; /* Vertically center the content */
+}
+
+td img {
+    width: 100%; /* Makes images fill the cell while maintaining aspect ratio */
+    height: auto; /* Ensures aspect ratio is preserved */
+    max-width: 240px; /* Limits the maximum width of the images */
+}
+
+td label {
+    display: block; /* Makes the switch a block-level element to prevent overlap */
+    margin-top: 10px;
+}
+
+
+/* Horizontal Scrolling Container for Light Records */
+.light-container {
+    display: flex; /* Align child elements horizontally */
+    overflow-x: hidden; /* Allow horizontal scrolling */
+    width: 100%; /* Use full width of the page */
+    margin: 20px auto;
+    padding: 0;
+    gap: 0; /* No gap between the records */
+    scroll-snap-type: x mandatory; /* Smooth scrolling behavior */
+    justify-content: start; /* Start the scroll at the left */
+    scroll-behavior: smooth; /* Smooth scrolling when scrolling horizontally */
+}
+
+/* Light Records (Each Light Item) */
+.light-record {
+    flex: 0 0 100%; /* Each record takes up 100% of the container width */
+    max-width: 100%; /* Prevent exceeding container width */
+    text-align: center;
+    scroll-snap-align: center; /* Snaps to the center of the container */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add shadow for better separation */
+    padding: 20px;
+    background-color: #dabf972f; /* White background for each record */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Heading for each Light Record */
+.light-record h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px; /* Space between name and content */
+    color: #333; /* Dark gray for the name */
+}
+
+/* Optional: Style the images inside the records */
+.light-record img {
+    width: 100%;
+    height: auto;
+    max-width: 400px; /* Max width for images */
+    margin-bottom: 10px;
+}
+
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth; /* Smooth scrolling when scrolling horizontally */
+}
+
+/* Add margin to left for better alignment */
+body {
+    margin-left: 10px;
+}
+
+/* Navigation Buttons */
+.light-nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nav-btn {
+    background-color: #ffcc00; /* Sunny yellow background */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 0 10px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #ff9900; /* Slightly darker yellow for hover */
+}
