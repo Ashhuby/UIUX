@@ -1,93 +1,147 @@
+/* LoginPage.CSS - Updated to match MyShine style */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to top, #ffd2578c, #ffffff);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 20px;
 }
 
 .wrapper {
     background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     text-align: center;
+    border: 2px solid #ffcc00;
 }
 
 h1 {
-    margin-bottom: 20px;
-    color: #333;
+    margin-bottom: 25px;
+    color: #cc6600;
+    font-size: 28px;
+    font-weight: 600;
 }
 
 .input-box {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     position: relative;
+    text-align: left;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #666;
 }
 
 .input-box input {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 12px 15px;
+    border: 2px solid #ffcc00;
+    border-radius: 8px;
     font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s;
 }
 
 .input-box input:focus {
-    border-color: #5b9bd5;
+    border-color: #ff9900;
     outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.2);
 }
 
 .remember-forgot {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    align-items: center;
+    margin-bottom: 25px;
     font-size: 14px;
-    color: #555;
 }
 
 .remember-forgot label {
     display: flex;
     align-items: center;
+    gap: 8px;
+    color: #666;
+    cursor: pointer;
 }
 
 .remember-forgot a {
-    color: #5b9bd5;
+    color: #cc6600;
     text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
 .remember-forgot a:hover {
+    color: #ff6600;
     text-decoration: underline;
 }
 
 button {
     width: 100%;
-    padding: 10px;
+    padding: 14px;
     border: none;
-    background-color: #5b9bd5;
+    background-color: #ffcc00;
     color: white;
     font-size: 16px;
-    border-radius: 4px;
-    margin-bottom: 10px;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-bottom: 15px;
     cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Inter', sans-serif;
 }
 
 button:hover {
-    background-color: #4a89c3;
+    background-color: #ff9900;
 }
 
 button[type="button"] {
-    background-color: #ccc;
+    background-color: #ffe680;
+    color: #cc6600;
 }
 
 button[type="button"]:hover {
-    background-color: #bbb;
+    background-color: #ffcc00;
+    color: white;
+}
+
+.register-link {
+    margin-top: 20px;
+    color: #666;
+}
+
+.register-link a {
+    color: #cc6600;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+    color: #ff6600;
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #ffcc00;
+    cursor: pointer;
 }

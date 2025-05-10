@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | MyShine</title>
+    <link rel="stylesheet" type="text/css" href="Main.CSS">
+</head>
+
+<body>
+    <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+        <!-- Header Section -->
+        <div class="top-card">
+            <img src="ImagesForWebsite/Logo.png" alt="MyShine Logo">
+            <nav>
+                <a href="Main.HTML">Home</a>
+                <a href="LoginPage.HTML">Sign Out</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Our Story Section -->
+    <div class="pairing-container">
+        <img src="ImagesForWebsite\Founder.png" alt="The founder of MyShine" style =width:15%;>
+        <h1 class="Section-Headings">Our Story</h1>
+        
+        <h3 class="Section-Headings">Meet the founder - Johnny Boy Wheatland</h3>
+
+        <p>MyShine was born from Johnny Wheatland's passion for smart, simple living.<br> Tired of clunky systems and disconnected apps, Johnny set out to create a seamless way for people to control their home lighting from one central place. 
+
+            <br>With MyShine, users can adjust lights from anywhere—whether they're setting the mood for a cozy evening or making sure everything’s off while they’re away. <br>It’s lighting, made easy.</p>
+
+     </div>
+    <!-- Contact Form Section -->
+    <div class="pairing-container">
+        <h1 class="Section-Headings">Contact Our Team</h1>
+        
+        <div class="contact-form">
+            <form>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject">
+                        <option value="support">Product Support</option>
+                        <option value="sales">Sales Inquiry</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+            </form>
+        </div>
+
+        <div class="contact-form">
+            <form id="contactForm">
+                <!-- Your existing form fields -->
+                <div class="form-group" style="text-align: center;">
+                    <button type="submit" class="pair-btn" id="contactSubmit">Send Message</button>
+                </div>
+            </form>
+            <div id="formFeedback" class="feedback-message"></div>
+        </div>
+
+
+
+
+    </div>
+
+    <!-- Contact Info Section -->
+    <div class="pairing-container">
+        <h2 class="Section-Headings">Other Ways to Reach Us</h2>
+        
+        <div class="contact-info">
+            <div class="info-card">
+                <h3>Email</h3>
+                <p><a href="mailto:support@myshine.com">support@myshine.com</a></p>
+            </div>
+            
+            <div class="info-card">
+                <h3>Phone</h3>
+                <p>07910 353687213 </p>
+            </div>
+            
+            <div class="info-card">
+                <h3>Business Hours</h3>
+                <p>Monday-Friday: 9AM-5PM BST</p>
+                <p>Saturday: 10AM-2PM BSt</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent actual form submission
+            
+            // Show loading state
+            const submitBtn = document.getElementById('contactSubmit');
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+            
+            // Simulate form processing (replace with actual AJAX call)
+            setTimeout(() => {
+                // This is where you'd normally put your fetch/AJAX code
+                const feedback = document.getElementById('formFeedback');
+                
+                // For demo purposes - random success/failure
+                const isSuccess = Math.random() > 0.4;  // 60% chance of success
+                
+                if (isSuccess) {
+                    feedback.className = 'feedback-message feedback-success';
+                    feedback.innerHTML = `
+                        <h3>✓ Message Sent!</h3>
+                        <p>Thank you for contacting us. We'll respond within 24 hours.</p>
+                    `;
+                    document.getElementById('contactForm').reset();
+                } else {
+                    feedback.className = 'feedback-message feedback-error';
+                    feedback.innerHTML = `
+                        <h3>✗ Sending Failed</h3>
+                        <p>Please try again or contact us directly at support@myshine.com</p>
+                    `;
+                }
+                
+                feedback.style.display = 'block';
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send Message';
+                
+                // Scroll to feedback message
+                feedback.scrollIntoView({ behavior: 'smooth' });
+                
+            }, 1500); // Simulate network delay
+        });
+    </script>
+
+    <footer>
+        <a href="#top">Back to the top</a>
+        <p>&copy; 2025 MyShine. All rights reserved.</p>
+        <p>Contact us at <a href="mailto:contact@myshine.com">contact@myshine.com</a></p>
+        <img src="ImagesForWebsite/SocialsIcons.png" class="social-icons">
+    </footer>
+</body>
+</html>

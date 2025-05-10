@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="RegisterPage.css">
+    <link rel="stylesheet" href="LoginPage.CSS">
 </head>
 
 <body>
     <div class="wrapper">
         <form action="#">
             <h1>Register</h1>
+            <p>Join the MyShine™ family</p>
+            <br>
 
             <div class="input-box">
                 <input type="text" placeholder="Username" required>
@@ -28,9 +30,20 @@
             <div class="input-box">
                 <input type="password" placeholder="Confirm Password" required>
             </div>
+            
+            <div>
+                <label>
+                    <p>By creating an account, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+                    <br>
+                    <input type="checkbox"> I agree to the terms and conditions
+                    <br>
+                </label>
+                <br>
+            </div>
 
-            <button type="submit">Register</button>
-            <button type="button" onclick="window.location.href='LoginPage.html'">Back to Login</button>
+            
+            <button type="button" onclick="window.location.href='Main.html'">Sign up</button>
+            <button type="button" onclick="window.location.href='LoginPage.html'">Already got an account?</button>
         </form>
     </div>
 </body>

@@ -197,16 +197,15 @@
             
             <img src="ImagesForWebsite\Logo.png" alt="">
             <nav>
-                <a href="Contact.HTML">Contact Us</a>
+                <a href="ContactUs.HTML">Contact Us</a>
                 <a href="LoginPage.HTML">Sign Out</a>
             </nav>
         </div>
     </div>
 
 
-    
-
-
+    <!-- Audio -->
+    <audio id="clickSound" src="Audio\preview.mp3" preload="auto"></audio>
 
 
     <!-- Light Control Section -->
@@ -323,12 +322,25 @@
         </div>
     </div>
 
-    
     <script>
-        // Toggle functionality
+
+        //AUDIO
+        const clickSound = document.getElementById('clickSound');
+       
+        // Set default volume (50%)
+        [clickSound].forEach(sound => {
+            sound.volume = 1.0; // Set volume to 100%
+        });
+    
+    
+       
+        // FUNCTIONALITY!!!
+        
         document.querySelectorAll('.toggle-btn').forEach(btn => {
             btn.addEventListener('click', function() {
                 this.classList.toggle('active');
+                clickSound.currentTime = 0;
+                clickSound.play();
             });
         });
         
