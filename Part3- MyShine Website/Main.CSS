@@ -41,37 +41,12 @@
 }
 
 
-
-
-
-
-
-
-
-/* Top Border */
-.top-card {
-    background-color: white; /* Changed to white */
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 16px;
-    text-align: center;
-    margin-bottom: 30px;
-    border: 2px solid #ffcc00;
-}
-
 /* Font Import and Base Styles */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 /* Apply Inter font to all text elements */
-body, h1, h2, h3, h4, h5, h6, p, a, button, span, div {
+h1, h2, h3, h4, h5, h6, p, a, button, span, div {
     font-family: 'Inter', sans-serif !important;
-}
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #ffffff;
-    margin: 0;
-    padding: 20px;
-    background: linear-gradient(to top, #ffd2578c, #ffffff);
 }
 
 /* Container Styles */
@@ -94,12 +69,7 @@ footer {
     background-color: white; /* White background */
 }
 
-.device-card {
-    background-color: white;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
+
 
 /* Image Container */
 .image-container {
@@ -119,58 +89,6 @@ footer {
     max-height: 100%;
     object-fit: contain;
     border-radius: 12px;
-}
-
-
-/* Keep all your existing other styles below */
-/* ... (toggle switches, navigation, etc) ... */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Top Border */
-.top-card {
-    background-color: #ffe68036;
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 16px;
-    text-align: center;
-    margin-bottom: 30px;
-    border: 2px solid #ffcc00;
-}
-
-.top-card h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-.top-card nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #cc6600;
-}
-
-.top-card nav a:hover {
-    color: #ff6600;
 }
 
 
@@ -199,25 +117,6 @@ footer {
     display: block;
 }
 
-/* Image Container */
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto;
-    padding: 10px;
-    
-    border-radius: 16px;
-    background-color: white;
-    max-width: 800px;
-}
-
-.image-container img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    border-radius: 12px;
-}
 
 
 
@@ -247,9 +146,6 @@ footer {
     color: #ff6600; /* brighter summer orange */
 }
 
-
-/* Font Import and Base Styles */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 body {
     font-family: 'Inter', sans-serif;
@@ -367,7 +263,7 @@ td label {
     color: #333;
 }
 
-/* Optional: Style the images inside the records */
+/* Style the images inside the records */
 .light-record img {
     width: 100%;
     height: auto;
@@ -380,10 +276,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Add margin to left for better alignment */
-body {
-    margin-left: 10px;
-}
 
 /* Navigation Buttons */
 .light-nav {
@@ -453,17 +345,6 @@ footer a:hover {
     margin-bottom: 20px;
     color: #666;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Contact Page Styles */
